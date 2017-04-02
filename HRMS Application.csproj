@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{D0778358-02DB-4139-919A-190EBF177A34}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>HRMS_Application</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attandance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attandance.Designer.cs">
+      <DependentUpon>Attandance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttandanceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttandanceReport.Designer.cs">
+      <DependentUpon>AttandanceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Benefits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Benefits.Designer.cs">
+      <DependentUpon>Benefits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BenefitsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BenefitsReport.Designer.cs">
+      <DependentUpon>BenefitsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnection.cs" />
+    <Compile Include="Emonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emonth.Designer.cs">
+      <DependentUpon>Emonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmonthReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmonthReport.Designer.cs">
+      <DependentUpon>EmonthReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee-report.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee-report.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeReport.Designer.cs">
+      <DependentUpon>EmployeeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIForm.Designer.cs">
+      <DependentUpon>MDIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary.Designer.cs">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalaryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalaryReport.Designer.cs">
+      <DependentUpon>SalaryReport.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Attandance.resx">
+      <DependentUpon>Attandance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttandanceReport.resx">
+      <DependentUpon>AttandanceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Benefits.resx">
+      <DependentUpon>Benefits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BenefitsReport.resx">
+      <DependentUpon>BenefitsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emonth.resx">
+      <DependentUpon>Emonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmonthReport.resx">
+      <DependentUpon>EmonthReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee-report.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Employee-report.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeReport.resx">
+      <DependentUpon>EmployeeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIForm.resx">
+      <DependentUpon>MDIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salary.resx">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalaryReport.resx">
+      <DependentUpon>SalaryReport.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Cheap-Car-Rentals-San-Diego1-1080x600.png" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\pers-pac-member-login-icon-2x.png" />
+    <Content Include="Resources\rent-a-car-compressed.jpg" />
+    <Content Include="Resources\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
